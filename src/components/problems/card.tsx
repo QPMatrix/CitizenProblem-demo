@@ -32,7 +32,7 @@ const ProblemCard = ({ problem }: ProblemCardProps) => {
           </div>
         </div>
       </CardContent>
-      <CardFooter className="flex justify-between flex-row">
+      <CardFooter className="flex justify-between flex-row mt-4">
         <Button>עדכון סטטוס</Button>
         <Button variant="outline" className="font-bold">
           שלח תגובה
