@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -66,81 +67,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+
   }
-}
-/* Swiper container customization */
-.swiper-container {
-  width: 100%;
-  height: auto;
-  padding-bottom: 20px;
-}
-
-/* Swiper slide images customization */
-.swiper-slide img {
-  border-radius: 0.75rem; /* Matches your TailwindCSS border-radius */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-  transition: transform 0.3s ease;
-}
-
-/* Add a scaling effect on hover */
-.swiper-slide:hover img {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Custom arrows */
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: white;
-  border-radius: 50%;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Dark mode arrows */
-.dark .swiper-button-prev,
-.dark .swiper-button-next {
-  background-color: rgba(255, 255, 255, 0.5); /* Lighter arrows for dark mode */
-  color: black;
-}
-
-/* Hover effect on arrows */
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
-  transform: translateY(-50%) scale(1.1); /* Slight scaling on hover */
-}
-
-.dark .swiper-button-prev:hover,
-.dark .swiper-button-next:hover {
-  background-color: rgba(255, 255, 255, 0.7); /* Dark mode hover effect */
-}
-
-/* Custom pagination (dots) */
-.swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 0.5); /* Default color for pagination bullets */
-  width: 10px;
-  height: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Active bullet customization */
-.swiper-pagination-bullet-active {
-  background-color: var(--primary); /* Use your primary color */
-  transform: scale(1.2); /* Slightly enlarge active bullet */
-}
-
-/* Dark mode pagination bullets */
-.dark .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.5); /* Light bullets for dark mode */
-}
-
-/* Active bullet in dark mode */
-.dark .swiper-pagination-bullet-active {
-  background-color: var(--primary-foreground);
 }
